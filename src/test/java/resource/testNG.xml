@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PQRS" parallel="none" >
+<listeners>
+
+    <listener class-name="commonActions.TestListener"></listener>
+</listeners>
+
+    <test name="Testing In Firefox">
+
+        <parameter name="browser" value="Firefox" />
+
+        <classes>
+
+
+
+            <class name="testCases.LoginTest" >
+
+
+            </class>
+        </classes>
+
+    </test>
+
+    <test name="Testing In Safari">
+
+        <parameter name="browser" value="Safari" />
+
+        <classes>
+
+
+
+            <class name="testCases.LoginTest" >
+
+
+            </class>
+        </classes>
+
+    </test>
+
+    <test name="Testing In chrome">
+
+        <parameter name="browser" value="Chrome" />
+
+        <classes>
+
+
+
+            <class name="testCases.LoginTest" >
+
+
+
+            </class>
+        </classes>
+
+
+    </test>
+
+</suite>

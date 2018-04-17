@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [PQRS]">
+  <listeners>
+    <listener class-name="commonActions.TestListener"/>
+  </listeners>
+  <test name="Testing In Safari(failed)">
+    <parameter name="browser" value="Safari"/>
+    <classes>
+      <class name="testCases.LoginTest">
+        <methods>
+          <include name="loginAsAdmin"/>
+          <include name="close"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- testCases.LoginTest -->
+    </classes>
+  </test> <!-- Testing In Safari(failed) -->
+  <test name="Testing In chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testCases.LoginTest">
+        <methods>
+          <include name="loginAsAdmin"/>
+          <include name="close"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- testCases.LoginTest -->
+    </classes>
+  </test> <!-- Testing In chrome(failed) -->
+</suite> <!-- Failed suite [PQRS] -->
